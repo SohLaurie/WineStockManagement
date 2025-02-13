@@ -7,6 +7,7 @@ com\wineapp\ui\dashboards\saleperson\item$3.class
 com\wineapp\ui\dashboards\saleperson\SalespersonDashboard.class
 com\wineapp\ui\dashboards\manager\supplier$4.class
 com\wineapp\ui\dashboards\manager\ManagerDashboard.class
+com\wineapp\ui\dashboards\manager\item$12.class
 com\wineapp\ui\dashboards\manager\supplier$1.class
 com\wineapp\ui\dashboards\saleperson\profile$5.class
 com\wineapp\ui\dashboards\manager\item$3.class
@@ -132,6 +133,7 @@ com\wineapp\ui\dashboards\manager\item$4.class
 com\wineapp\ui\dashboards\manager\ManagerDashboard$3.class
 com\wineapp\ui\dashboards\Admin\user$7.class
 com\wineapp\ui\dashboards\Admin\profile$5.class
+com\wineapp\ui\dashboards\manager\sales$10.class
 com\wineapp\ui\dashboards\Admin\item$13.class
 com\wineapp\ui\dashboards\Admin\sales$4.class
 com\wineapp\ui\dashboards\manager\sales$7.class

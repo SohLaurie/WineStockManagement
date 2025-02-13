@@ -132,7 +132,7 @@ public class profile extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jButton3.setForeground(new java.awt.Color(204, 0, 102));
-        jButton3.setText("Update User");
+        jButton3.setText("Update Profile");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);

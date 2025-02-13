@@ -23,21 +23,12 @@ CREATE TABLE `item` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `item` (`Id`, `Name`, `Type`, `Country`, `Year`, `Quantity`, `Price`, `supID`) VALUES
-(2,	'hdjjsjdh',	'sndns',	'kksjd',	2018,	23,	2100,	3),
-(6,	'MOULIN DE FRANCE',	'RED',	'FRANCE',	200,	12,	10050,	3);
-
-DROP TABLE IF EXISTS `notifications`;
-CREATE TABLE `notifications` (
-  `NoteId` int NOT NULL AUTO_INCREMENT,
-  `userID` int NOT NULL,
-  `Message` varchar(255) NOT NULL,
-  `Date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `IsRead` tinyint(1) DEFAULT '0',
-  PRIMARY KEY (`NoteId`),
-  KEY `userID` (`userID`),
-  CONSTRAINT `notifications_ibfk_1` FOREIGN KEY (`userID`) REFERENCES `users` (`UserId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+(1,	'Chateau Margaux',	'Red',	'France',	2017,	50,	12000,	1),
+(2,	'Penfolds Grange',	'Red',	'Australia',	2020,	30,	7500,	2),
+(3,	'Tignanello',	'Red',	'Italy',	2019,	12,	15000,	3),
+(4,	'Beringer Chardonnay',	'White',	'USA',	2019,	16,	30000,	4),
+(5,	'CloudyBay Sauvignon Blanc',	'White',	'New Zealand',	2021,	45,	5500,	4),
+(6,	'Vega Silica Unico',	'Red',	'Spain',	2010,	15,	60000,	5);
 
 DROP TABLE IF EXISTS `sales`;
 CREATE TABLE `sales` (
@@ -55,8 +46,10 @@ CREATE TABLE `sales` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `sales` (`SalesId`, `Wine_id`, `Quantity_sold`, `Sale_date`, `Total_price`, `StaffId`) VALUES
-(1,	2,	101,	'2000-10-19 23:00:00',	200,	2),
-(10,	2,	19,	'2000-12-01 23:00:00',	100,	2);
+(1,	1,	5,	'2024-02-01 13:30:00',	6000,	2),
+(2,	3,	2,	'2024-01-15 09:00:00',	22000,	3),
+(3,	5,	3,	'2025-02-13 22:19:22',	55000,	4),
+(4,	6,	1,	'2025-02-13 22:20:25',	100000,	4);
 
 DROP TABLE IF EXISTS `suppliers`;
 CREATE TABLE `suppliers` (
@@ -68,7 +61,11 @@ CREATE TABLE `suppliers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `suppliers` (`SupId`, `Name`, `Email`, `Phone`) VALUES
-(3,	'sqSS',	'abbb',	'QSSDSJOoz');
+(1,	'French wines Ltd',	'jeandupont@fftx.com',	'+331 23 45 67 89'),
+(2,	'Australian Wine imports',	'markthompson@awi.com',	'+61 2 7839 5432'),
+(3,	'Italian wine masters ',	'luigirossi@iwm.it',	'+39 055 123 4567'),
+(4,	'Napa Valley Distributors',	'emilycarter@nvd.com',	'+1 707 987 6543'),
+(5,	'Spanish Vino Co',	'carlosfernandez@svc.com',	'+34 91 345 6789');
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
@@ -81,7 +78,9 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `users` (`UserId`, `Username`, `Password`, `Role`) VALUES
-(2,	'LOLO',	'123',	'admin'),
-(3,	'Doo',	'234',	'manager');
+(1,	'Fomenkong',	'237',	'admin'),
+(2,	'Soh Laurie',	'123',	'admin'),
+(3,	'Doloick',	'234',	'manager'),
+(4,	'Malcom',	'456',	'saleperson');
 
--- 2025-02-12 10:48:14
+-- 2025-02-13 22:23:50
