@@ -48,7 +48,7 @@ CREATE TABLE `sales` (
 INSERT INTO `sales` (`SalesId`, `Wine_id`, `Quantity_sold`, `Sale_date`, `Total_price`, `StaffId`) VALUES
 (1,	1,	5,	'2024-02-01 13:30:00',	6000,	2),
 (2,	3,	2,	'2024-01-15 09:00:00',	22000,	3),
-(3,	5,	3,	'2025-02-13 22:19:22',	55000,	4),
+(3,	5,	3,	'2025-02-13 12:19:22',	55000,	4),
 (4,	6,	1,	'2025-02-13 22:20:25',	100000,	4);
 
 DROP TABLE IF EXISTS `suppliers`;
@@ -78,9 +78,9 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `users` (`UserId`, `Username`, `Password`, `Role`) VALUES
-(1,	'Fomenkong',	'237',	'admin'),
+(1,	'Fomekong',	'237',	'admin'),
 (2,	'Soh Laurie',	'123',	'admin'),
 (3,	'Doloick',	'234',	'manager'),
 (4,	'Malcom',	'456',	'saleperson');
 
--- 2025-02-13 22:23:50
+-- 2025-02-13 22:58:42
